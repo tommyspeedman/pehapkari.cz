@@ -431,12 +431,12 @@ public function handleAdd()
 
 a už tu vzniká programming hell a **programátorský dluh do budoucnosti**.
  
-Druhý mnohem složitější problém by nastal v momentě, kdy se událost nevyhazuje v komponentě, ale v nějaké službě. Typicky můžeme mít `BasketFacade`, která před přidáním produktu do košíku musí zvalidovat např. to, zda může být produkt přidán do košíku a pokud ano, tak produkt přidá a vyvolá událost. Pak nám nezbývá  nic jiného než použití `return` pokud bychom chtěli událost přeci jen vyvolávat v komponentě. Problém může být, ale pokud `BasketFacade` deleguje požadavek na přidání produktu jiné službě apod. Pak musíme `return`ovat `return`y z celého řetezce volaných metod a to je pěkný oser. :)
+Druhý mnohem složitější problém by nastal v momentě, kdy se událost nevyhazuje v komponentě, ale v nějaké službě. Typicky můžeme mít `BasketFacade`, která před přidáním produktu do košíku musí zvalidovat např. to, zda může být produkt přidán do košíku a pokud ano, tak produkt přidá a vyvolá událost. Pak nám nezbývá  nic jiného než použití `return` pokud bychom chtěli událost přeci jen vyvolávat v komponentě. Problém ale může být pokud `BasketFacade` deleguje požadavek na přidání produktu jiné službě apod. Pak musíme `return`ovat `return`y z celého řetezce volaných metod a to je pěkný oser. :)
 
 
 ## Shrnutí
 
-Ukázali jsme si jak jednoduše se dá propojit Symfony s Nette a **jak přimět komponenty poslouchat na události**. Zároveň jsme si osvěžili práci se ajaxem, snippety a vysvětlili jsme si, jak fungují **události a posluchači**. 
+Ukázali jsme si jak jednoduše se dá propojit Symfony s Nette a **jak přimět komponenty poslouchat na události**. Zároveň jsme si osvěžili práci s ajaxem, snippety a vysvětlili jsme si, jak fungují **události a posluchači**. 
 
 Jaký to dobrý pocit z nově nabytých znalostí! :)
 
